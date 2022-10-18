@@ -5,7 +5,7 @@ export const CardContainer = styled.div`
   border-radius: 10px;
   width: 325px;
   height: 200px;
-
+  margin: 30px;
   ${({ image }) =>
     `
   background: url("${image}") no-repeat ;

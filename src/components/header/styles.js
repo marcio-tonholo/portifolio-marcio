@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.div`
+  z-index: 10;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: #111416;
   color: var(--white);
   box-shadow: var(--blue) 2px 2px 5px;
-  padding: 25px;
+  padding: 0 50px;
   height: 100px;
   width: 100%;
   position: fixed;
@@ -15,7 +16,6 @@ export const StyledHeader = styled.div`
   div {
     display: flex;
     align-items: center;
-    width: 65%;
   }
   h4 {
     font-family: var(--ff-heading);
@@ -38,30 +38,27 @@ export const StyledHeader = styled.div`
     justify-content: space-around;
     height: 100px;
   }
+`;
 
-  a {
-    display: flex;
-    align-items: center;
-    width: 80px;
-    height: 100px;
-    padding: 2px;
-
-    title {
-      background-color: #ccc;
-    }
-    :hover {
-      border-bottom: 3px solid var(--blue);
-
-      svg {
-        animation: shake 0.2s;
-        animation-iteration-count: 2;
-      }
-    }
-  }
+export const StyledAnchor = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 100px;
+  padding: 2px;
   svg {
     color: var(--white);
     width: 100%;
     height: 25px;
+  }
+
+  :hover {
+    border-bottom: 3px solid var(--blue);
+    svg {
+      animation: shake 0.2s;
+      animation-iteration-count: 2;
+    }
   }
 
   @keyframes shake {
@@ -79,6 +76,49 @@ export const StyledHeader = styled.div`
     }
     100% {
       margin-left: 0;
+    }
+  }
+  p {
+    @keyframes scaleDown {
+      0% {
+        transform: translateY(250%);
+      }
+      100% {
+        transform: translateY(280%);
+      }
+    }
+
+    font-weight: bold;
+    color: var(--black);
+    opacity: 0;
+    position: absolute;
+    transform: translateY(15%);
+    background: var(--blue);
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 12px;
+
+    ::before {
+      content: "";
+      z-index: -1;
+      top: -5px;
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 25px solid var(--blue);
+      transform: translateX(-50%);
+      left: 50%;
+    }
+  }
+  :hover {
+    p {
+      margin-top: -40px;
+      opacity: 1;
+      transform: translateY(280%);
+      animation: scaleDown 200ms;
     }
   }
 `;

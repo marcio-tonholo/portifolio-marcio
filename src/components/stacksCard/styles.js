@@ -6,7 +6,7 @@ export const StackCard = styled.div`
   border-radius: 8px;
   padding: 1rem;
   background-color: var(--white);
-
+  margin: 30px;
   display: flex;
   align-items: center;
   justify-content: center;

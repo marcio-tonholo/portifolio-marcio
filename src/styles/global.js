@@ -5,12 +5,12 @@ export default createGlobalStyle`
     ${resetCss}
 
     :root {
-        --ff-primary:  'Merriweather', serif;
+    --ff-primary:  'Merriweather', serif;
     --ff-heading:'Press Start 2P', cursive;
     --fixedblack:#1a1a1c;
     --black:#000;
     --white:#ebebeb;
-    --blue:#1e90ff;
+    --blue:#166fb7;
     --purple:#3b21d9;
     }
 

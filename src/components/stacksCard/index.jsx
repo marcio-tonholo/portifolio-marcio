@@ -1,6 +1,6 @@
 import { StackCard } from "./styles";
 
-export const Stack = ({ title, Icon }) => {
+export const Stack = ({ title, Icon, key }) => {
   const isString = typeof Icon === "string";
 
   return (
