@@ -53,14 +53,6 @@ export const StyledAnchor = styled.a`
     height: 25px;
   }
 
-  :hover {
-    border-bottom: 3px solid var(--blue);
-    svg {
-      animation: shake 0.2s;
-      animation-iteration-count: 2;
-    }
-  }
-
   @keyframes shake {
     0% {
       margin-left: 0;
@@ -89,11 +81,11 @@ export const StyledAnchor = styled.a`
     }
 
     font-weight: bold;
-    color: var(--black);
+    color: var(--white);
     opacity: 0;
     position: absolute;
     transform: translateY(15%);
-    background: var(--blue);
+    background: var(--fixedblack);
     padding: 10px;
     border-radius: 4px;
     text-align: center;
@@ -108,12 +100,17 @@ export const StyledAnchor = styled.a`
       height: 0px;
       border-left: 25px solid transparent;
       border-right: 25px solid transparent;
-      border-bottom: 25px solid var(--blue);
+      border-bottom: 25px solid var(--fixedblack);
       transform: translateX(-50%);
       left: 50%;
     }
   }
   :hover {
+    border-bottom: 3px solid transparent;
+    svg {
+      animation: shake 0.2s;
+      animation-iteration-count: 2;
+    }
     p {
       margin-top: -40px;
       opacity: 1;

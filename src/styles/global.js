@@ -18,5 +18,17 @@ export default createGlobalStyle`
         font-family:  'Merriweather', serif;
     }
 
+    body::-webkit-scrollbar {
+        width: 3px;  
+    }
+
+    body::-webkit-scrollbar-track {
+        background:#000;    
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color:var(--blue);      
+      
+    }
     
 `;

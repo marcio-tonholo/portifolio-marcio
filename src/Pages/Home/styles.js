@@ -52,9 +52,10 @@ export const Porjectscontainer = styled.div`
 `;
 
 export const Stackscontainer = styled.div`
-  background-color: var(--fixedblack);
+  background-color: #0b0b0b;
   width: 100%;
-  box-shadow: 0px -2px 5px var(--fixedblack);
+  border-top: 1px solid var(--blue);
+  border-top: 1px solid var(--blue);
 
   h4 {
     color: var(--white);
@@ -69,5 +70,46 @@ export const Stackscontainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+`;
+
+export const Certificates = styled.section`
+  border-top: 2px solid var(--fixedblack);
+  border-bottom: 2px solid var(--fixedblack);
+  background-color: #101010;
+  padding: 10px 50px;
+
+  h4 {
+    font-family: var(--ff-heading);
+    font-size: 25px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: var(--white);
+    text-align: start;
+    text-shadow: 2px 2px 5px var(--black);
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  img {
+    box-shadow: 2px 2px 5px var(--black);
+    width: 45%;
+    margin: 40px 0;
+    border-radius: 8px;
+  }
+`;
+
+export const StyledFooter = styled.footer`
+  background-color: var(--black);
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: #333333;
+    font-size: 12px;
+    text-align: center;
   }
 `;
