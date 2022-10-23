@@ -5,7 +5,8 @@ export default createGlobalStyle`
     ${resetCss}
 
     :root {
-    --ff-primary:  'Merriweather', serif;
+    --ff-primary:'Roboto', sans-serif;
+
     --ff-heading:'Press Start 2P', cursive;
     --fixedblack:#1a1a1c;
     --black:#000;
@@ -15,7 +16,7 @@ export default createGlobalStyle`
     }
 
     body {
-        font-family:  'Merriweather', serif;
+        font-family:  'Roboto', sans-serif;
     }
 
     body::-webkit-scrollbar {

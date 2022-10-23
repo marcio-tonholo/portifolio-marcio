@@ -35,6 +35,11 @@ export const Title = styled.div`
   }
 
   `}
+    @media (max-width:800px) {
+      font-size: 25px;
+      text-align: center;
+      padding: 0 10px;
+    }
   }
 
   h2 {
@@ -48,7 +53,11 @@ export const Title = styled.div`
     animation: blink 1s step-start infinite;
   }
 
-  `}
+  `} @media (max-width:800px) {
+      font-size: 25px;
+      text-align: center;
+      padding: 0 10px;
+    }
   }
   h3 {
     font-size: 20px;
@@ -61,7 +70,11 @@ export const Title = styled.div`
     animation: blink 1s step-start infinite;
   }
 
-  `}
+  `} @media (max-width:800px) {
+      font-size: 25px;
+      text-align: center;
+      padding: 0 10px;
+    }
   }
   button {
     font-family: var(--ff-heading);

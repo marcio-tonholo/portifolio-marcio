@@ -18,7 +18,7 @@ function InitialPage() {
   const vidRef = useRef(null);
   const text1 = "Olá eu sou Márcio José";
   const text2 = "este é meu portifólio";
-  const text3 = "Conheça meus projetos";
+  const text3 = "conheça meus projetos!";
 
   const handlePlayVideo = () => {
     vidRef.current.play();

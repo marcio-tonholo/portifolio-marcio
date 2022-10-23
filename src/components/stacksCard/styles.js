@@ -7,7 +7,6 @@ export const StackCard = styled.div`
   border-radius: 8px;
   border: 1px solid var(--blue);
   box-shadow: 0px 0px 5px var(--purple);
-
   margin: 30px;
   display: flex;
   align-items: center;
@@ -58,5 +57,10 @@ export const StackCard = styled.div`
       transform: translateY(-200%);
       animation: scaleUp 200ms;
     }
+  }
+  @media (max-width: 800px) {
+    margin: 15px 5px;
+    min-width: 9rem;
+    max-width: 9rem;
   }
 `;

@@ -29,4 +29,9 @@ export const stackData = [
   { title: "Node JS", img: FaNodeJs },
   { title: "Postgresql", img: SiPostgresql },
   { title: "Python", img: FaPython },
+  { title: "Django", img: SiDjango },
+  { title: "Jest", img: SiJest },
+  { title: "Docker", img: FaDocker },
+  { title: "Yarn", img: FaYarn },
+  { title: "Linux", img: FaLinux },
 ];

@@ -7,12 +7,11 @@ export const StyledHeader = styled.div`
   justify-content: space-between;
   background-color: #111416;
   color: var(--white);
-  box-shadow: var(--blue) 2px 2px 5px;
+  box-shadow: var(--blue) 0px 2px 5px;
   padding: 0 50px;
-  height: 100px;
   width: 100%;
   position: fixed;
-
+  height: 100px;
   div {
     display: flex;
     align-items: center;
@@ -37,6 +36,21 @@ export const StyledHeader = styled.div`
     align-items: center;
     justify-content: space-around;
     height: 100px;
+  }
+  @media (max-width: 800px) {
+    flex-direction: column;
+    height: auto;
+    position: relative;
+    div {
+      margin-top: 10px;
+    }
+    h4 {
+      font-size: 15px;
+      line-height: 20px;
+    }
+    nav {
+      width: auto;
+    }
   }
 `;
 

@@ -17,13 +17,22 @@ export const AboutMe = styled.div`
     font-family: var(--ff-heading);
     font-size: 25px;
     margin-bottom: 10px;
+    text-shadow: 3px 3px 3px var(--black);
   }
   p {
+    text-shadow: 3px 3px 3px var(--black);
     font-size: 23px;
+    text-align: justify;
   }
   div {
     padding-left: 50px;
-    width: 45%;
+    width: 50%;
+  }
+  @media (max-width: 800px) {
+    div {
+      padding-left: 20px;
+      width: 90%;
+    }
   }
 `;
 
@@ -36,7 +45,7 @@ export const Porjectscontainer = styled.div`
   `};
   background-size: cover;
 
-  div {
+  .projectCards {
     flex-wrap: wrap;
     display: flex;
     align-items: center;
@@ -45,9 +54,15 @@ export const Porjectscontainer = styled.div`
   h4 {
     color: var(--white);
     font-family: var(--ff-heading);
-    text-shadow: var(--black) 2px 2px 3px;
+    text-shadow: 3px 3px 3px var(--black);
     font-size: 25px;
     padding: 10px 50px 15px 50px;
+  }
+  @media (max-width: 800px) {
+    h4 {
+      font-size: 20px;
+      padding: 20px;
+    }
   }
 `;
 
@@ -60,7 +75,7 @@ export const Stackscontainer = styled.div`
   h4 {
     color: var(--white);
     font-family: var(--ff-heading);
-    text-shadow: var(--black) 2px 2px 3px;
+    text-shadow: 3px 3px 3px var(--black);
     font-size: 25px;
     padding: 30px 50px;
   }
@@ -70,6 +85,12 @@ export const Stackscontainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+  @media (max-width: 800px) {
+    h4 {
+      font-size: 20px;
+      padding: 20px;
+    }
   }
 `;
 
@@ -86,7 +107,7 @@ export const Certificates = styled.section`
     width: 100%;
     color: var(--white);
     text-align: start;
-    text-shadow: 2px 2px 5px var(--black);
+    text-shadow: 3px 3px 3px var(--black);
   }
   div {
     display: flex;
@@ -99,16 +120,30 @@ export const Certificates = styled.section`
     margin: 40px 0;
     border-radius: 8px;
   }
+  @media (max-width: 800px) {
+    padding: 10px;
+    h4 {
+      font-size: 20px;
+      padding: 20px;
+    }
+    div {
+      flex-direction: column;
+    }
+    img {
+      width: 90%;
+      margin: 10px;
+    }
+  }
 `;
 
 export const StyledFooter = styled.footer`
   background-color: var(--black);
+  color: #333333;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   a {
-    color: #333333;
     font-size: 12px;
     text-align: center;
   }

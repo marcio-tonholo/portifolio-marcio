@@ -12,6 +12,7 @@ import {
 import star from "../../assets/videos/stars.gif";
 import frontEnd from "../../assets/imgs/certificadofrontend.png";
 import fullStack from "../../assets/imgs/certificadofullstack.png";
+import { projects } from "../../components/projectCard/projects";
 
 function HomePage() {
   return (
@@ -21,22 +22,24 @@ function HomePage() {
         <div>
           <h4>Sobre Mim</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sunt
-            quisquam placeat, eius ea illo cupiditate vel accusamus ducimus?
-            Repudiandae laudantium excepturi alias et a aliquid asperiores esse,
-            veritatis officiis!
+            Minha conexão com a tecnologia começou desde cedo, sempre tive
+            facilidade e gostei da área, foi então que em setembro de 2021
+            comecei um curso de 2000 horas sobre desenvolvimento full-stack na
+            Kenzie Academy Brasil, onde me dediquei a aprender tudo oque me
+            disponibilizaram. Meu objetivo é me tornar um bom desenvolvedor com
+            muito conhecimento sobre as tecnologias mais usadas no mercado.
           </p>
         </div>
       </AboutMe>
       <Porjectscontainer bgimage={star}>
         <h4>Meus Projetos</h4>
-        <div>
-          {[1, 52, 26, 36, 46, 56].map((index) => (
-            <ProjectCard key={index}></ProjectCard>
+        <div className="projectCards">
+          {projects.map((project, index) => (
+            <ProjectCard project={project} key={index}></ProjectCard>
           ))}
         </div>
       </Porjectscontainer>
-      <Stackscontainer bgimage={star}>
+      <Stackscontainer>
         <h4>Tecnologias que usei</h4>
         <div>
           {stackData.map((stack, index) => (
